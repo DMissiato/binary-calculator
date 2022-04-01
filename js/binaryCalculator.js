@@ -64,9 +64,9 @@ btnEql.addEventListener('click', () =>
 {
     if(!num1 || !operand || !num2) return;
 
-    const result = eval(parseInt(num1, 10) + operand + parseInt(num2, 10));
+    const result = eval(parseInt(num1, 2) + operand + parseInt(num2, 2));
     clear();
-    res.innerHTML = result;
+    res.innerHTML = result.toString(2);
 });
 
 btnSum.addEventListener('click', (e) => setOperand(e.target.value));
